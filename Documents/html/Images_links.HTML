@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,81 +8,65 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
+            margin: 20px;
         }
-        header, nav, section {
-            margin-bottom: 20px;
+
+        h1, h2 {
+            color: #333;
         }
+
         img {
             max-width: 100%;
             height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Welcome to My Website</h1>
-</header>
-
-<nav>
-    <h2>Navigation</h2>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#menu">Menu</a></li>
-    </ul>
-</nav>
-
-<section id="home">
-    <h2>Home</h2>
-    <p>Explore the latest in technology with our featured image:</p>
-    <a href="https://example.com/technology" target="_blank">
-        <img src="technology_image.jpg" alt="Technology Image">
-    </a>
-</section>
-
-<section id="gallery">
-    <h2>Gallery</h2>
-    <p>Discover the beauty of nature in our gallery:</p>
-    <div>
-        <a href="https://example.com/nature1" target="_blank">
-            <img src="nature_image1.jpg" alt="Nature Image 1">
+    <section id="home">
+        <h1>Welcome to Our Website</h1>
+        <p>Explore the amazing world of technology with us!</p>
+        <a href="https://example.com/technology" target="_blank">
+            <img src="https://via.placeholder.com/400x200" alt="Technology Image">
         </a>
-        <a href="https://example.com/nature2" target="_blank">
-            <img src="nature_image2.jpg" alt="Nature Image 2">
-        </a>
-        <a href="https://example.com/nature3" target="_blank">
-            <img src="nature_image3.jpg" alt="Nature Image 3">
-        </a>
-    </div>
-</section>
+    </section>
 
-<section id="menu">
-    <h2>Menu</h2>
-    <p>Indulge in our delicious menu:</p>
-    <ul>
-        <li>
-            <a href="https://example.com/food1" target="_blank">
-                <img src="food_image1.jpg" alt="Food Item 1">
-                Food Item 1
+    <section id="gallery">
+        <h2>Nature Gallery</h2>
+        <div class="grid-container">
+            <a href="https://example.com/nature1" target="_blank">
+                <img src="https://via.placeholder.com/200x200" alt="Nature Image 1">
             </a>
-        </li>
-        <li>
-            <a href="https://example.com/food2" target="_blank">
-                <img src="food_image2.jpg" alt="Food Item 2">
-                Food Item 2
+            <a href="https://example.com/nature2" target="_blank">
+                <img src="https://via.placeholder.com/200x200" alt="Nature Image 2">
             </a>
-        </li>
-        <li>
-            <a href="https://example.com/food3" target="_blank">
-                <img src="food_image3.jpg" alt="Food Item 3">
-                Food Item 3
+            <a href="https://example.com/nature3" target="_blank">
+                <img src="https://via.placeholder.com/200x200" alt="Nature Image 3">
             </a>
-        </li>
-    </ul>
-</section>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="https://example.com/food1" target="_blank">Pizza</a></li>
+            <li><a href="https://example.com/food2" target="_blank">Salad</a></li>
+            <li><a href="https://example.com/food3" target="_blank">Burger</a></li>
+        </ul>
+        <img src="https://via.placeholder.com/400x200" alt="Food Image" style="display: block; margin-top: 10px;">
+    </section>
 
 </body>
+
 </html>
+
